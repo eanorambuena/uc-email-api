@@ -6,7 +6,7 @@
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
-    "build": "esbuild --bundle src/server.js --format=esm --outfile=dist/_worker.js",
+    "build": "esbuild --bundle ./src/index.js --format=esm --outfile=dist/_worker.js",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
