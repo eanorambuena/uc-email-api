@@ -9,14 +9,15 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.44.4",
     "chanfana": "2.0.2",
-    "zod": "3.23.8",
-    "hono": "4.4.7"
+    "hono": "4.4.13",
+    "zod": "3.23.8"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240712.0",
+    "@cloudflare/workers-types": "4.20240712.0",
     "@types/node": "20.8.3",
-    "@types/service-worker-mock": "^2.0.1",
-    "wrangler": "^3.60.3"
+    "@types/service-worker-mock": "2.0.1",
+    "wrangler": "3.60.3"
   }
 }
