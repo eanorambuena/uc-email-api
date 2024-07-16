@@ -1,10 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-process.env.PUBLIC_SUPABASE_URL = 'https://vuskeafcpsdvuuemzqwl.supabase.co'
-process.env.PUBLIC_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1c2tlYWZjcHNkdnV1ZW16cXdsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjEwOTA2MDgsImV4cCI6MjAzNjY2NjYwOH0.EspjBKQABg2wJ7lOvPK5y8cA15j5bcCDy0RntMPaIuA'
-
-const publicSupabaseUrl = process.env.PUBLIC_SUPABASE_URL ?? ''
-const publicSupabaseKey = process.env.PUBLIC_SUPABASE_ANON_KEY ?? ''
+const publicSupabaseUrl = 'https://vuskeafcpsdvuuemzqwl.supabase.co'
+const publicSupabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1c2tlYWZjcHNkdnV1ZW16cXdsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjEwOTA2MDgsImV4cCI6MjAzNjY2NjYwOH0.EspjBKQABg2wJ7lOvPK5y8cA15j5bcCDy0RntMPaIuA'
 export const supabase = createClient(publicSupabaseUrl, publicSupabaseKey)
 
 const emailDomains = ['uc.cl', 'estudiante.uc.cl', 'alumni.uc.cl']
